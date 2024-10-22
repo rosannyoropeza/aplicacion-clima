@@ -57,9 +57,9 @@ Algunas posibles mejoras para futuras versiones incluyen:
 
 ## Capturas de Pantalla
 
-<p> <img src="./img/Aplicacion_Clima.gif" /> Pantalla de busqueda</p>
-<p> <img src="./img/pantalla de busqueda.png" /> Pantalla de busqueda</p>
-<p> <img src="./img/pantalla de resultado.png" /> Pantalla de busqueda</p>
+<p> <img src="./img/Aplicacion_Clima.gif" /></p>
+<p> <img src="./img/pantalla de busqueda.png" /></p>
+<p> <img src="./img/pantalla de resultado.png" /></p>
 
 ## Créditos
 
