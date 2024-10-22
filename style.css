@@ -1,0 +1,127 @@
+body {
+    font-family: "Merriweather Sans", sans-serif;
+    background-color: rgb(1, 88, 144);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura del 100% de la ventana */
+}
+
+.container {
+    width: 600px;
+    max-width: 60%; 
+    margin: 0px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(6, 100, 130); /* Cambiado para mejor contraste */
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, p {
+    color: white;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 70%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: rgba(0, 166, 255, 0.8);
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(0, 166, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(0, 144, 230);
+}
+
+#responseData {
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+}
+
+/* Estilos para las notificaciones */
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #444;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+    opacity: 0.9;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(0);
+}
+
+.notification.warning {
+    background-color: #ff9800; /* Color para notificaciones de advertencia */
+}
+
+.notification.error {
+    background-color: #f44336; /* Color para notificaciones de error */
+}
+
+/* Animación de entrada para las notificaciones */
+.notification.show {
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    #responseData {
+        font-size: 16px;
+    }
+}
